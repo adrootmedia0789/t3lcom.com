@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
 import { site } from "@/lib/site";
-import { BrandMark } from "@/components/BrandMark";
 
 const serviceLinks = [
   "Flight Bookings",
@@ -24,7 +22,15 @@ export function Footer() {
     <footer className="bg-slate-900 text-slate-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <BrandMark variant="footer" />
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-2xl" aria-hidden>
+              ✈
+            </span>
+            <span className="font-bold text-white text-lg">
+              {site.shortName}
+              <span className="block text-xs font-medium text-sky-400">{site.tagline}</span>
+            </span>
+          </div>
           <p className="text-sm leading-relaxed mb-4">
             Independent phone-based travel agency serving USA customers with expert flight
             booking services, 24/7.
@@ -93,37 +99,20 @@ export function Footer() {
           <p className="text-xs text-slate-400 leading-relaxed mb-4">
             <strong className="text-slate-300">Important Disclosure:</strong> {site.disclosure}
           </p>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-slate-500">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-slate-500">
             <span>
               © {new Date().getFullYear()} {site.name} · All rights reserved.
             </span>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-              <div className="flex gap-3">
-                <Link href="/privacy" className="hover:text-slate-300">
-                  Privacy
-                </Link>
-                <Link href="/terms" className="hover:text-slate-300">
-                  Terms
-                </Link>
-                <Link href="/disclaimer" className="hover:text-slate-300">
-                  Disclaimer
-                </Link>
-              </div>
-              <a
-                href={site.adrootMediaUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center opacity-80 hover:opacity-100 transition-opacity"
-                aria-label="Adroot Media"
-              >
-                <Image
-                  src={site.logos.adrootMedia}
-                  alt="Adroot Media"
-                  width={140}
-                  height={32}
-                  className="h-7 w-auto"
-                />
-              </a>
+            <div className="flex gap-3">
+              <Link href="/privacy" className="hover:text-slate-300">
+                Privacy
+              </Link>
+              <Link href="/terms" className="hover:text-slate-300">
+                Terms
+              </Link>
+              <Link href="/disclaimer" className="hover:text-slate-300">
+                Disclaimer
+              </Link>
             </div>
           </div>
         </div>

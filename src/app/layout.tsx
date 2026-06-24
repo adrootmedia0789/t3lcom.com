@@ -25,10 +25,6 @@ export const metadata: Metadata = {
     siteName: site.name,
     type: "website",
   },
-  icons: {
-    icon: site.logos.icon,
-    apple: site.logos.icon,
-  },
 };
 
 export default function RootLayout({
