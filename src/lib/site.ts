@@ -3,8 +3,8 @@ export const site = {
   shortName: "telcom",
   tagline: "Flight Specialists",
   domain: "t3lcom.com",
-  phone: "(877) 835-2666",
-  phoneTel: "+18778352666",
+  phone: "+1 (302) 473-0821",
+  phoneTel: "+13024730821",
   email: "contact@t3lcom.com",
   address: {
     street: "3645 N Sagewood Circle",
