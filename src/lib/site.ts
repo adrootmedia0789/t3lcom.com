@@ -1,5 +1,5 @@
 export const site = {
-  name: "Telcom Enterprises",
+  name: "Telcom Enterprises LLC",
   shortName: "telcom",
   tagline: "Flight Specialists",
   domain: "t3lcom.com",
@@ -7,16 +7,16 @@ export const site = {
   phoneTel: "+18778352666",
   email: "contact@t3lcom.com",
   address: {
-    street: "1200 Market Street, Suite 400",
-    city: "Wilmington",
-    state: "DE",
-    zip: "19801",
+    street: "3645 N Sagewood Circle",
+    city: "Mesa",
+    state: "AZ",
+    zip: "85207",
     country: "United States",
   },
   hours: "Open 24/7",
-  legalEntity: "Telcom Enterprises",
+  legalEntity: "Telcom Enterprises LLC",
   disclosure:
-    "Telcom Enterprises is an independent travel agency. We are not an airline. We are an accredited agency that sells tickets for over 100 airlines on behalf of clients. Service fees may apply.",
+    "Telcom Enterprises LLC is an independent travel agency. We are not an airline. We are an accredited agency that sells tickets for over 100 airlines on behalf of clients. Service fees may apply.",
 } as const;
 
 export const services = [
@@ -57,7 +57,7 @@ export const services = [
 export const process = [
   {
     step: 1,
-    title: "Call Telcom Enterprises",
+    title: "Call Telcom Enterprises LLC",
     description:
       "Dial our booking line any time — day or night. A live travel specialist picks up without automated menus.",
   },
