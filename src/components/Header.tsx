@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { BrandMark } from "@/components/BrandMark";
 
 const navLinks = [
   { label: "Flight Bookings", href: "#services" },
@@ -21,17 +22,7 @@ export function Header() {
 
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 gap-4">
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-2xl" aria-hidden>
-              ✈
-            </span>
-            <span className="font-bold text-slate-900 text-lg leading-tight">
-              {site.shortName}
-              <span className="block text-xs font-medium text-sky-600 tracking-wide">
-                {site.tagline}
-              </span>
-            </span>
-          </Link>
+          <BrandMark variant="header" />
 
           <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
             {navLinks.map((link) => (

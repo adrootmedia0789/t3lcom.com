@@ -15,6 +15,11 @@ export const site = {
   },
   hours: "Open 24/7",
   legalEntity: "Telcom Enterprises LLC",
+  logos: {
+    icon: "/logos/adroot-icon.png",
+    adrootMedia: "/logos/adroot-media-logo.png",
+  },
+  adrootMediaUrl: "https://www.adrootmedia.com",
   disclosure:
     "Telcom Enterprises LLC is an independent travel agency. We are not an airline. We are an accredited agency that sells tickets for over 100 airlines on behalf of clients. Service fees may apply.",
 } as const;
